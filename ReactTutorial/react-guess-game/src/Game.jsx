@@ -2,6 +2,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 // gameSliceから必要なアクションをインポート
 import { setGuess, checkAnswer, resetGame, setMin, setMax } from './features/gameSlice';
+import '../components/Result.css'
 
 function Game() {
   // useSelector: Reduxストアから状態を取得（state.gameから必要な値を分割代入）
@@ -46,7 +47,7 @@ function Game() {
       <button onClick={() => dispatch(checkAnswer())} disabled={isFinished}>判定！</button> {/* checkAnswerアクションをディスパッチ */}
       
       {/* 結果メッセージと試行回数 */}
-      <p>{message}</p>
+      <p className={isFinished ? 'message success' : 'message'}>{message}</p>
       <p>試行回数: {tries}</p>
       
       {/* リセットボタン */}

@@ -18,7 +18,7 @@ Reactでは、コンポーネント内で `useState` を使って状態を管理
 ```bash
 npm install @reduxjs/toolkit react-redux
 ```
-
+![](/ReactTutorial/img/Part6/Part6-1.png)
 次に、以下のファイル構成を作りましょう：
 
 ```

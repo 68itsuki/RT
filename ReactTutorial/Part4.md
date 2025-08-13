@@ -61,14 +61,18 @@ Reactでは、クラス名も状態によって切り替えることができま
 
 ```css
 .message {
-  color: #333;
+  color: #333; /* 通常のメッセージはグレー */
+  font-size: 16px;
+  margin: 10px 0;
 }
 .message.success {
+  color: #28a745; /* 成功時は緑色 */
   font-weight: bold;
-  color: green;
+  font-size: 18px;
 }
 ```
-
+![](/ReactTutorial/img/Part4/Part4-1.png)
+![](/ReactTutorial/img/Part4/Part4-2.png)
 ---
 
 こういった小さな工夫を加えるだけで、アプリの完成度や使いやすさがグッと向上します。 次はスコアの記録や履歴の表示にチャレンジしてみましょう！

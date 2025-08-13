@@ -71,7 +71,7 @@ npm run dev   # または yarn dev
 
 ブラウザにて http\://localhost:5173 を開き、ゲームが動作するか確認しましょう！
 
-![](/ReactTutorial/img/Part2/Part2-0.png)
+![](/ReactTutorial/img/Part2/Part2-1.png)
 ---
 
 ### 2-1. ランダムな数字を生成しよう（Math.random）
@@ -163,7 +163,7 @@ const resetGame = () => {
 ```jsx
 <button onClick={resetGame}>リセット</button>
 ```
-
+![](/ReactTutorial/img/Part2/Part2-2.png)
 ---
 
 ### 2-5. プレイ中／終了後の画面切り替え（簡単な状態分岐）
@@ -196,7 +196,7 @@ const checkAnswer = () => {
 />
 <button onClick={checkAnswer} disabled={isFinished}>判定！</button>
 ```
-
+![](/ReactTutorial/img/Part2/Part2-3.png)
 ---
 
 これで、基本的な数当てゲームが完成です！次の章では、このゲームを部品ごとに整理していきましょう。
