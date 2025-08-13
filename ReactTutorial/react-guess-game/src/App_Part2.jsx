@@ -1,9 +1,5 @@
 import { useState } from 'react';
 import './App.css';
-// 分割したコンポーネントをcomponentsフォルダから読み込む
-import InputArea from '../components/InputArea';
-import Header from '../components/Header';
-import Result from '../components/Result';
 
 function App() {
 
@@ -53,17 +49,28 @@ function App() {
 
   return (
     <div className="App">
-      {/* ゲームのタイトルを表示するHeaderコンポーネント */}
-      <Header title="数当てゲーム" />
+      <h1>数当てゲーム</h1>
       <p>1〜100の数字を当ててください</p>
       
-      {/* 数字入力と判定ボタンを表示するInputAreaコンポーネント */}
-      {/* props: guess(入力値), setGuess(入力値更新関数), checkAnswer(判定関数), isFinished(ゲーム終了状態) */}
-      <InputArea guess={guess} setGuess={setGuess} checkAnswer={checkAnswer} isFinished={isFinished} />
-
-      {/* 結果メッセージ、試行回数、リセットボタンを表示するResultコンポーネント */}
-      {/* props: message(結果メッセージ), tries(試行回数), resetGame(リセット関数) */}
-      <Result message={message} tries={tries} resetGame={resetGame} />
+      {/* ユーザーが数字を入力するフィールド */}
+      <input
+        type="number"
+        value={guess}
+        onChange={(e) => setGuess(e.target.value)} // 入力値を状態に保存
+        disabled={isFinished} // ゲーム終了時は入力を無効化
+      />
+      
+      {/* 入力値をチェックするボタン。isFinishedがtrueの場合は無効化*/}
+      <button onClick={checkAnswer} disabled={isFinished}>判定！</button>
+      
+      {/* 結果メッセージを表示 */}
+      <p>{message}</p>
+      
+      {/* 試行回数を表示 */}
+      <p>試行回数: {tries}</p>
+      
+      {/* ゲームをリセットするボタン */}
+      <button onClick={resetGame}>リセット</button>
     </div>
   );
 }
