@@ -4,7 +4,10 @@
 
 これまで、すべてのコードを `App.jsx` に書いていましたが、コードが長くなってくると管理が大変になります。
 
-Reactでは、画面を機能単位で「部品（コンポーネント）」に分けるのが基本です。今回は以下のように分割してみましょう：
+Reactでは、画面を機能単位で「部品（コンポーネント）」に分けるのが基本です。
+
+![](/ReactTutorial/img/Part3/Part3-1.jpg)
+今回は以下のように分割してみましょう：
 
 - `Header.jsx`: タイトルや説明を表示
 - `InputArea.jsx`: 入力欄と判定ボタン
@@ -71,7 +74,8 @@ function InputArea({ guess, setGuess, checkAnswer, isFinished }) {
 export default InputArea;
 ```
 
-このように、状態の管理は親が行い、子は見た目と操作だけを担当するように分離できます。
+このように、状態の管理は親が行い、子は見た目と操作だけを担当するように分離できます。  
+[最終的なApp.jsxコード→](/ReactTutorial/react-guess-game/src/App_Part3.jsx)
 
 ---
 
