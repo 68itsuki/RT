@@ -92,6 +92,49 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# Vite
+dist-ssr
+*.local
+
+# React development
+.env.development
+.env.production
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# React build outputs
+build/
+dist/
+out/
+
+# React testing
+coverage/
+*.lcov
+.nyc_output
+test-results/
+playwright-report/
+playwright/.cache/
+
+# React development tools
+.eslintcache
+.stylelintcache
+.cache
+.parcel-cache
+.vite/
+
+# React debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# React hot reload
+*.hot-update.js
+*.hot-update.json
+
 # Runtime data
 pids
 *.pid
@@ -174,6 +217,13 @@ public
 # Storybook build outputs
 .out
 .storybook-out
+
+# Vite build output
+dist-ssr
+.vite/
+
+# React development server
+*.local
 
 # Temporary folders
 tmp/
@@ -271,6 +321,28 @@ logs/
 application-local.properties
 application-dev.properties
 application-prod.properties
+
+# React Tutorial specific
+# Development environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# React development cache
+.vite/
+.cache/
+.parcel-cache/
+
+# React testing artifacts
+coverage/
+test-results/
+playwright-report/
+
+# React build artifacts
+dist-ssr/
+*.hot-update.js
+*.hot-update.json
 
 # ===========================================
 # Keep these files
