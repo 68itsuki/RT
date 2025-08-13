@@ -76,3 +76,6 @@ function NameInput() {
 ---
 
 次のPartでは、この知識を使って「数当てゲーム」のロジックを作っていきましょう！
+
+---
+[前のページへ](/ReactTutorial/Part0.md)　　　[次のページへ](/ReactTutorial/Part2.md)

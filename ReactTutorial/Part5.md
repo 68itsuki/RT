@@ -83,3 +83,5 @@ const resetGame = () => {
 
 これで「繰り返し遊べる」「スコアで成長を確認できる」「難易度を調整できる」ゲームになりました！ 次は最終章：状態管理の整理（Redux Toolkit編）に進みましょう。
 
+---
+[前のページへ](/ReactTutorial/Part4.md)　　　[次のページへ](/ReactTutorial/Part6.md)

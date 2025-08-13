@@ -149,3 +149,5 @@ function Game() {
 
 これでこのReactチュートリアルは完了です！お疲れさまでした 🎉
 
+---
+[前のページへ](/ReactTutorial/Part5.md)

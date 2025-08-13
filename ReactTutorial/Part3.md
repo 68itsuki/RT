@@ -77,3 +77,5 @@ export default InputArea;
 
 これで、コードの見通しが良くなり、再利用性の高い設計になってきました！ 次の章では、`useEffect` や `useRef` を使って、ちょっとした工夫を加えてみましょう。
 
+---
+[前のページへ](/ReactTutorial/Part2.md)　　　[次のページへ](/ReactTutorial/Part4.md)

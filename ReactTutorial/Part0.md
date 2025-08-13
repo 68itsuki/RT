@@ -111,3 +111,6 @@ npm run dev   # または yarn dev
 ---
 
 次は、実際にReactコンポーネントを作っていくところから始めていきましょう！
+
+---
+[次のページへ](/ReactTutorial/Part1.md)

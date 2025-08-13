@@ -201,3 +201,5 @@ const checkAnswer = () => {
 
 これで、基本的な数当てゲームが完成です！次の章では、このゲームを部品ごとに整理していきましょう。
 
+---
+[前のページへ](/ReactTutorial/Part1.md)　　　[次のページへ](/ReactTutorial/Part3.md)
