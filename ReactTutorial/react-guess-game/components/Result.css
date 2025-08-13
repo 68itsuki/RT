@@ -1,0 +1,10 @@
+.message {
+  color: #333; /* 通常のメッセージはグレー */
+  font-size: 16px;
+  margin: 10px 0;
+}
+.message.success {
+  color: #28a745; /* 成功時は緑色 */
+  font-weight: bold;
+  font-size: 18px;
+}

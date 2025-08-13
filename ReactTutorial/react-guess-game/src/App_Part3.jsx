@@ -1,20 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 // 分割したコンポーネントをcomponentsフォルダから読み込む
 import InputArea from '../components/InputArea';
 import Header from '../components/Header';
-import Result from '../components/Result';
+import Result from '../components/Result_Part3';
 
 function App() {
 
-  // 正解の値を管理（初期値はnull、useEffectで設定）
-  const [answer, setAnswer] = useState(null);
-
-  // 副作用を扱う。→初回の画面表示時に実行
-  useEffect(() => {
-    const random = Math.floor(Math.random() * 100) + 1;
-    setAnswer(random);
-  }, []); // ← この [] が「初回のみ実行」の意味
+  // 正解の値を1〜100の範囲でランダムに生成
+  // Math.random()で0〜1未満の小数を生成 → 100倍 → 切り捨て → +1で1〜100に
+  const [answer, setAnswer] = useState(Math.floor(Math.random() * 100) + 1);
 
   // ユーザーが入力した値を管理
   const [guess, setGuess] = useState('');
@@ -30,9 +25,6 @@ function App() {
 
   // ユーザーが入力した値をチェックする関数
   const checkAnswer = () => {
-    // answerがnullの場合は処理をスキップ（初期化前の保護）
-    if (answer === null) return;
-    
     // ユーザーが入力した文字列を数値に変換（第2引数の10は10進数を意味）
     const num = parseInt(guess, 10);
 
@@ -70,8 +62,8 @@ function App() {
       <InputArea guess={guess} setGuess={setGuess} checkAnswer={checkAnswer} isFinished={isFinished} />
 
       {/* 結果メッセージ、試行回数、リセットボタンを表示するResultコンポーネント */}
-      {/* props: message(結果メッセージ), tries(試行回数), resetGame(リセット関数), isFinished(ゲーム終了状態) */}
-      <Result message={message} tries={tries} resetGame={resetGame} isFinished={isFinished} />
+      {/* props: message(結果メッセージ), tries(試行回数), resetGame(リセット関数) */}
+      <Result message={message} tries={tries} resetGame={resetGame} />
     </div>
   );
 }
