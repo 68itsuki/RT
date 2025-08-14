@@ -22,7 +22,7 @@ const checkAnswer = () => {
   }
 };
 ```
-
+[App.jsx](/ReactTutorial/react-guess-game/src/App_Part5.jsx)
 このように、`setHistory([...history, 新しい値])` で履歴を追加できます。
 
 ---
@@ -38,6 +38,7 @@ Reactでは配列の内容を `.map()` を使って繰り返し表示できま�
   ))}
 </ul>
 ```
+[Result.jsx→](/ReactTutorial/react-guess-game/components/Result.jsx)
 
 これで「過去何回プレイして、何回で正解したか」が一覧で見えるようになります。
 

@@ -20,6 +20,8 @@ function App() {
   return <div>ゲーム開始！答えは秘密です</div>;
 }
 ```
+[App.jsx→](/ReactTutorial/react-guess-game/src/App_Part4.jsx)
+
 
 ### 4-2. inputに自動フォーカスを当ててみよう（useRef）
 
@@ -56,6 +58,7 @@ Reactでは、クラス名も状態によって切り替えることができま
   {message}
 </p>
 ```
+[InputArea.jsx→](/ReactTutorial/react-guess-game/components/InputArea.jsx)
 
 このように書くことで、正解時だけ背景色や文字色を変えるといった演出も可能です。 CSS側でクラスを定義しておきましょう：
 
@@ -71,6 +74,8 @@ Reactでは、クラス名も状態によって切り替えることができま
   font-size: 18px;
 }
 ```
+[Result.css→](/ReactTutorial/react-guess-game/components/Result.css)
+
 ![](/ReactTutorial/img/Part4/Part4-1.png)
 ![](/ReactTutorial/img/Part4/Part4-2.png)
 ---

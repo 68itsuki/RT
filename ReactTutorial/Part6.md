@@ -41,7 +41,7 @@ export const store = configureStore({
   },
 });
 ```
-
+[store.js→](/ReactTutorial/react-guess-game/src/app/store.js)
 #### gameSlice.js
 
 ```js
@@ -87,7 +87,7 @@ export const gameSlice = createSlice({
 export const { setGuess, checkAnswer, resetGame } = gameSlice.actions;
 export default gameSlice.reducer;
 ```
-
+[gameSlice.js→](/ReactTutorial/react-guess-game/src/features/gameSlice.js)
 ---
 
 ### 6-3. ゲーム状態をReduxで管理してみよう
@@ -107,6 +107,7 @@ function App() {
   );
 }
 ```
+[App.jsx→](/ReactTutorial/react-guess-game/src/App.jsx)
 
 `Game.jsx`では、Reduxの状態とアクションを使ってゲームを動かします：
 
@@ -134,6 +135,7 @@ function Game() {
   );
 }
 ```
+[Game.jsx→](/ReactTutorial/react-guess-game/src/Game.jsx)
 
 ---
 

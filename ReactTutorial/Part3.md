@@ -45,6 +45,7 @@ export default Header;
 
 ここで `title` は親（App）から子（Header）に渡された値（props）です。
 
+[🔗：Header.jsx全体→](/ReactTutorial/react-guess-game/components/Header.jsx)
 ### 3-3. 子から親にイベントを伝える（関数を渡す）
 
 ユーザーがボタンをクリックしたときの処理（判定やリセット）は、親コンポーネントが管理したい内容です。
@@ -73,9 +74,10 @@ function InputArea({ guess, setGuess, checkAnswer, isFinished }) {
 }
 export default InputArea;
 ```
+[🔗：InputArea.jsx](/ReactTutorial/react-guess-game/components/InputArea_Part3.jsx)
 
 このように、状態の管理は親が行い、子は見た目と操作だけを担当するように分離できます。  
-[最終的なApp.jsxコード→](/ReactTutorial/react-guess-game/src/App_Part3.jsx)
+[🔗：最終的なApp.jsx→](/ReactTutorial/react-guess-game/src/App_Part3.jsx)
 
 ---
 
